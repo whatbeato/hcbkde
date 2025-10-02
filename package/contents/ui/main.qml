@@ -5,13 +5,13 @@ import org.kde.plasma.components 3.0 as PlasmaComponents
 import org.kde.plasma.plasmoid 2.0
 
 PlasmoidItem {
-    preferredRepresentation: compactRepresentation
+    preferredRepresentation: fullRepresentation
     
     fullRepresentation: Item {
         Layout.minimumWidth: label.implicitWidth
         Layout.maximumHeight: label.implicitHeight
-        Layout.preferredWidth: 640 * PlasmaCore.Units.devicePixelRatio
-        Layout.preferredHeight: 480 * PlasmaCore.Units.devicePixelRatio
+        Layout.preferredWidth: 640
+        Layout.preferredHeight: 480
         
         PlasmaComponents.Label {
             id: label
