@@ -14,9 +14,15 @@ PlasmoidItem {
         Layout.preferredHeight: 480
         
         PlasmaComponents.Label {
+            id: orgname
+            anchors.fill: parent
+            text: "Organization Name"
+            horizontalAlignment: Text.AlignLeft
+        }
+        PlasmaComponents.Label {
             id: label
             anchors.fill: parent
-            text: "testing this out :D"
+            text: "Balance"
             horizontalAlignment: Text.AlignHCenter
         }
     }
