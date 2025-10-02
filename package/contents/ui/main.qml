@@ -5,6 +5,20 @@ import org.kde.plasma.components 3.0 as PlasmaComponents
 import org.kde.plasma.plasmoid 2.0
 
 PlasmoidItem {
+    function request() {
+        var xhr = XMLHttpRequest();
+        xhr.onstatechange = function() {
+            if (xhr.readyState == XMLHttpRequest.HEADERS_RECEIVED) {
+                print('headers received!')
+            } else if(xhr.readyState == XMLHttpRequest.DONE) {
+                print('done')
+                const response = JSON.parse(xhr.responseText.toString())
+                view.model = response.times
+            }
+        }
+        xhr.open("https://hcb.hackclub.com/api/v3/organizations/lisbon")
+        xhr.send()
+    }
     preferredRepresentation: fullRepresentation
     
     fullRepresentation: Item {
