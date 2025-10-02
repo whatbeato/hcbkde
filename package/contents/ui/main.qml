@@ -4,7 +4,7 @@ import org.kde.plasma.core as PlasmaCore
 import org.kde.plasma.components 3.0 as PlasmaComponents
 import org.kde.plasma.plasmoid 2.0
 
-PlasmoidItem {
+Item {
     function request() {
         var xhr = XMLHttpRequest();
         xhr.onstatechange = function() {
@@ -19,6 +19,9 @@ PlasmoidItem {
         xhr.open("https://hcb.hackclub.com/api/v3/organizations/lisbon")
         xhr.send()
     }
+}
+
+PlasmoidItem {
     preferredRepresentation: fullRepresentation
     
     fullRepresentation: Item {
