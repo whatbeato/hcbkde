@@ -1,0 +1,20 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "fonz@hackclub.com",
+                "Name": "Fonz Beato"
+            }
+        ],
+        "Category": "Utilities",
+        "Description": "A widget that can show a transparent organization's balance on HCB, Hack Club's fiscal sponsorship plaform <3",
+        "Icon": "view-bank",
+        "Id": "com.fonzpt.hcbviewerkde",
+        "Name": "HCB KDE Widget",
+        "Version": "1",
+        "Website": "https://fonz.pt/hcb-kde/",
+        "BugReportUrl": "https://fonz.pt/hcb-kde/"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "KPackageStructure": "Plasma/Applet"
+}
